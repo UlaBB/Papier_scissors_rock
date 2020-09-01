@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kamień, papier, nożyce</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+    <link rel="stylesheet" href="/sass/style.css">
+</head>
+
+<body>
+    <section class="game">
+
+        <div class="score fade-out">
+            <div class="player-score">
+                <h2>player</h2>
+                <p>0</p>
+            </div>
+            <div class="computer-score">
+                <h2>computer</h2>
+                <p>0</p>
+            </div>
+        </div>
+
+        <div class="welcoming">
+            <h1>Rock Paper Scissors</h1>
+            <div class="images">
+                <div class="icon"><i class="far fa-hand-rock"></i></div>
+                <div class="icon"><i class="far fa-hand-paper"></i></div>
+                <div class="icon"><i class="far fa-hand-scissors"></i></div>
+            </div>
+            <button class="btn">Play!</button>
+        </div>
+
+        <div class="main fade-out">
+            <div id="messages">Make your move</div>
+            <div class="hands">
+                <div class="player-hand"></div>
+                <div class="computer-hand"></div>
+            </div>
+            <div id="buttons">
+                <button id="rock">Rock</button>
+                <button id="paper">Paper</button>
+                <button id="scissors">Scissors</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- <script src="js/functions.js"></script> -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

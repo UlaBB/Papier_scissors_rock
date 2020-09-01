@@ -1,0 +1,156 @@
+/*Variables*/
+$textColor: #feda6a;
+$backgroundColor: #464e5f;
+
+/*Global*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h2{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+p{
+    font-size: 25px;
+    margin: 0 10px;
+    text-align: center;
+    padding: 10px;
+}
+.game{
+    background: #464e5f;
+    height: 100vh;
+}
+/*Score*/
+.score{
+    color: #fff;
+    background: #393f4d;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .player-score, .computer-score{
+        margin: 30px;
+        min-width: 120px;
+        height: 80px;
+        text-align: center;
+    }
+}
+/*Welcoming*/
+.welcoming{
+    background: #393f4d;
+    width: 600px ;
+    height: 400px;
+    margin: auto auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    h1{
+        font-size: 50px;
+        color: $textColor;
+    }
+    .images{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        margin: 25px;
+        .icon{
+            font-size: 50px;
+            color: $textColor;
+        }
+    }
+    .btn{
+        width: 150px;
+        height: 50px;
+        background: none;
+        border: none;
+        border: 1px solid $textColor;
+        color: $textColor;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 3px;
+        margin: 25px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background: $textColor;
+        color: #393f4d;
+    }
+}
+div.fade-out{
+    opacity: 0;
+    pointer-events: none;
+}
+div.fade-in{
+    opacity: 1;
+    pointer-events: all;
+}
+
+/*Main*/
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%); 
+}
+.hands{
+    display: flex;
+    justify-content: center;
+    .player-hand, .computer-hand{
+        font-size: 80px;
+        color: $textColor;
+        margin: 45px;
+    }
+    .player-hand{
+        // width: 100px;
+        // height: 80px;
+        transform: rotate(45deg);
+    }
+    .computer-hand{
+        // width: 100px;
+        // height: 80px;
+        transform: scaleY(1) rotate(-45deg);
+    }
+}
+#buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#rock, #paper, #scissors{
+    width: 150px;
+    height: 50px;
+    background: none;
+    border: 1px solid $textColor;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 3px;
+    margin: 25px;
+    cursor: pointer;
+}
+#scissors:hover{
+    background: $textColor;
+    color: #393f4d;
+}
+#rock:hover{
+    background: $textColor;
+    color: #393f4d;
+}
+#paper:hover{
+    background: $textColor;
+    color: #393f4d;
+}
+#messages{
+    color: #fff;
+    text-align: center;
+    font-size: 35px;
+    margin: 35px;
+} 
