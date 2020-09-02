@@ -13,7 +13,7 @@ const startGame = () => {
     });
 }
 
-//Gra
+//Play
 
 const playMatch = () => {
 
@@ -23,8 +23,6 @@ const playMatch = () => {
     const buttonRock = document.querySelector('#rock');
     const buttonPaper = document.querySelector('#paper');
     const buttonScissors = document.querySelector('#scissors');
-
-
 
     buttonRock.addEventListener('click', function () {
         buttonClick('kamien');
@@ -43,11 +41,9 @@ const playMatch = () => {
         computerScore.textContent = cScore;
     }
 
-    const playerHand = document.querySelector('.player-hand');
-    const computerHand = document.querySelector('.computer-hand');
-
-
     function buttonClick(buttonName) {
+        const computerHand = document.querySelector('.computer-hand');
+        const playerHand = document.querySelector('.player-hand');
         const computerOption = ['kamien', 'papier', 'nozyce'];
         const computerNumber = Math.floor(Math.random() * 3);
         const computerChoice = computerOption[computerNumber];
